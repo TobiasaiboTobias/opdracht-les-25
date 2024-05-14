@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+    <link rel="stylesheet" href="javascriptstylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#knop1").click(function(){
+                $(".groen").hide();
+            });
+            $("#knop2").click(function(){
+                $(".groen").show();
+            });
+            $("#knop3").click(function(){
+                $(".blauw").hide();
+            });
+            $("#knop4").click(function(){
+                $(".blauw").show();
+            });
+            $("#knop5").click(function(){
+                $(".rood").hide();
+            });
+            $("#knop6").click(function(){
+                $(".rood").show();
+            });
+            $("#img1").click(function(){
+                window.alert("Dit is een foto met natuur.")
+            });
+            $("#img2").click(function(){
+                window.alert("Dit is een foto met blauwe bloemen.")
+            });
+            $("#img3").click(function(){
+                window.alert("Dit is een foto met veel aardbeien.")
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="balk"> 
+        <h4> Welkom bij deze website! Hieronder zijn een aantal javascript onderdelen te vinden.</h4>
+    </div>
+    <div class="container1">
+        <div class="groen">
+            <p>
+                Klik op de afbeelding voor een beschrijving van de afbeelding.
+            </p>
+            <div id="groenfoto">
+                <img src="groenimg.jpeg" alt="natuur" id="img1">
+            </div>
+        </div>
+        <div class="blauw">
+            <p>
+                Klik op de afbeelding voor een beschrijving van de afbeelding.   
+            </p>
+            <div id="blauwfoto">
+                <img src="blauwimg.jpg" alt="bloemen" id="img2">
+            </div>
+        </div>
+        <div class="rood">
+            <p>
+                Klik op de afbeelding voor een beschrijving van de afbeelding.
+            </p>
+            <div id="roodfoto">
+                <img src="roodimg.jpg" alt="aardbeien" id="img3">
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div id="knopplek">
+            <input type="button" id="knop1" value="Klik hier">
+            <input type="button" id="knop2" value="Klik hier">
+        </div>
+        <div id="knopplek2">
+            <input type="button" id="knop3" value="Klik hier">
+            <input type="button" id="knop4" value="Klik hier">
+        </div>
+        <div id="knopplek3">
+            <input type="button" id="knop5" value="Klik hier">
+            <input type="button" id="knop6" value="Klik hier">
+        </div>
+    </div>
+</body>
+</html>
